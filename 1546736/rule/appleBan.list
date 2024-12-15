@@ -1,6 +1,6 @@
 [Rule]
 #电报转圈
-IP-CIDR,95.161.76.100/31,REJECT-NO-DROP,no-resolve
+#IP-CIDR,95.161.76.100/31,REJECT-NO-DROP,no-resolve
 #绕过企业证书过期
 DOMAIN,ocsp.apple.com,REJECT
 # 信息收集
