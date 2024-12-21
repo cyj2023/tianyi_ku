@@ -2,7 +2,7 @@
 #电报转圈
 IP-CIDR,95.161.76.100/31,REJECT-NO-DROP,no-resolve
 #绕过企业证书过期
-DOMAIN,ocsp.apple.com,REJECT
+#DOMAIN,ocsp.apple.com,REJECT
 # 信息收集
 URL-REGEX,\.log\.
 #防止B站白嫖
