@@ -8,7 +8,7 @@
 #!loon_version = 3.2.4(787)
 #!homepage = https://github.com/luestr/ProxyResource/blob/main/README.md
 #!icon = https://raw.githubusercontent.com/Orz-3/face/master/Bili.png
-#!date = 2024-11-28 15:33
+#!date = 2024-12-21 18:39
 
 
 [MitM]
@@ -20,7 +20,6 @@ hostname = ap?.bilibili.com,grpc.biliapi.net,www.bilibili.com,m.bilibili.com,*li
 # 开屏广告
 URL-REGEX,"^http:\/\/upos-sz-static\.bilivideo\.com\/ssaxcode\/\w{2}\/\w{2}\/\w{32}-1-SPLASH",REJECT-DICT
 URL-REGEX,"^http:\/\/[\d\.]+:8000\/v1\/resource\/\w{32}-1-SPLASH",REJECT-DICT
-
 
 [Rewrite]
 # 开屏广告
