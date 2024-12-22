@@ -11,7 +11,7 @@ DOMAIN,gslbtx.ximalaya.com,REJECT
 
 [Argument]
 arg1 = switch,true,tag=奶茶多合一获取
-arg2 = switch,true,tag=喜马拉雅获取
+arg2 = switch,true,tag=喜马拉雅
 arg3 = switch,true,tag=贴吧_获取Cookie1
 arg4 = switch,true,tag=贴吧_新版Cookie2
 arg5 = switch,true,tag=贴吧_新版Cookie3
