@@ -56,7 +56,7 @@ http-request ^https?:\/\/api-ipv6\.app\.acfun\.cn\/rest\/app\/user\/(signIn|hasS
 #TF
 #http-request ^https:\/\/testflight\.apple\.com\/v3\/accounts\/.*\/ru\/([^\/]+)(?!\/accept)$ script-path=https://raw.githubusercontent.com/MCdasheng/QuantumultX/main/Scripts/myScripts/TF_appIds.js,request-body=true, timeout=60, enable = {arg10}, tag=TF_appIds
 #蜜雪冰城
-http-response ^https:\/\/mxsa\.mxbc\.net\/api\/v1\/customer\/info script-path=https://gist.githubusercontent.com/Sliverkiss/865c82e42a5730bb696f6700ebb94cee/raw/mxbc.js, response-body=true, request-body=true, timeout=60, enable = {arg11}, tag=蜜雪冰城获取token
+http-response ^https:\/\/mxsa\.mxbc\.net\/api\/v1\/customer\/info script-path=https://gist.githubusercontent.com/Sliverkiss/865c82e42a5730bb696f6700ebb94cee/raw/mxbc.js, requires-body=true, timeout=60,  enable = {arg11}, tag=蜜雪冰城获取token
 #托迈酷客
 http-request ^https:\/\/apis\.folidaymall\.com\/online\/capi\/uc\/getCount script-path=https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/ThomasCook.js,request-body=true, timeout=60, enable = {arg12}, tag=获取托迈酷客Cookie
 #阿里云盘
