@@ -36,8 +36,8 @@ arg22 = switch,true,tag=AcFun签到任务开关
 #arg26 = switch,true,tag=阿里云任务任务开关
 #arg27 = input,"0 */30 * * *",tag=TestFlight自动加入任务时间
 #arg28 = switch,true,tag=TestFlight自动加入任务开关
-arg29 = input,"17 7 * * *",tag=建行生活任务时间
-arg30 = switch,true,tag=建行生活任务开关
+#arg29 = input,"17 7 * * *",tag=建行生活任务时间
+#arg30 = switch,true,tag=建行生活任务开关
 arg31 = input,"2 0 * * *",tag=高德地图打车签到任务时间
 arg32 = switch,true,tag=高德地图打车签到任务开关
 arg33 = input,"0 9 * * *",tag=汇率监控任务时间
@@ -69,7 +69,7 @@ cron {arg21} script-path=https://raw.githubusercontent.com/MCdasheng/QuantumultX
 #cron {arg23} script-path=https://kelee.one/Resource/Script/TestFlight/Auto_join_TF.js, timeout=180, enable= {arg24}, tag=自动加入TF
 #cron {arg25} script-path=https://gist.githubusercontent.com/Sliverkiss/33800a98dcd029ba09f8b6fc6f0f5162/raw/aliyun.js, timeout=60, enable= {arg26}, tag=阿里云任务
 #cron {arg27} script-path=https://raw.githubusercontent.com/MCdasheng/QuantumultX/main/Scripts/myScripts/TestFlight.js, timeout=60, enable={arg28}, tag=TestFlight自动加入
-cron {arg29} script-path=https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/jhsh_checkIn.js, timeout=300, enable={arg30}, tag=建行生活
+#cron {arg29} script-path=https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/jhsh_checkIn.js, timeout=300, enable={arg30}, tag=建行生活
 cron {arg31} script-path=https://raw.githubusercontent.com/ClydeTime/Surge/main/Script/Task/amap.js, timeout=10, enable={arg32}, tag=高德地图打车签到
 cron {arg33} script-path=https://raw.githubusercontent.com/Peng-YM/QuanX/master/Tasks/exchange.js, timeout=10, enable={arg34}, tag=汇率监控
 cron {arg35} script-path=https://raw.githubusercontent.com/lowking/Scripts/master/ali/aliYunPanCheckIn.js, timeout=10, enable={arg36}, tag=阿里云盘签到
