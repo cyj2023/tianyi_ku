@@ -78,7 +78,7 @@ http-response ^https:\/\/(?:app\.bilibili\.com|grpc\.biliapi\.net)\/bilibili\.po
 #http-response ^https:\/\/app\.bilibili\.com\/x\/v2\/feed\/index script-path=https://kelee.one/Resource/Script/Bilibili/Bilibili_remove_ads.js, requires-body=true, tag=移除首页推荐广告
 
 #移除热搜广告
-#http-response ^https:\/\/app\.bilibili\.com\/x\/v2\/search\/square\? script-path=https://kelee.one/Resource/Script/Bilibili/Bilibili_remove_ads.js, requires-body=true, tag=移除热搜广告
+http-response ^https:\/\/app\.bilibili\.com\/x\/v2\/search\/square\? script-path=https://kelee.one/Resource/Script/Bilibili/Bilibili_remove_ads.js, requires-body=true, tag=移除热搜广告
 
 #移除观影页广告
 #http-response ^https:\/\/api\.bilibili\.com\/pgc\/page\/(?:bangumi|cinema\/tab) script-path=https://kelee.one/Resource/Script/Bilibili/Bilibili_remove_ads.js, requires-body=true, tag=移除观影页广告
