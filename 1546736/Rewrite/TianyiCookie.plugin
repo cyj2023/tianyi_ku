@@ -13,7 +13,7 @@ DOMAIN,gslbtx.ximalaya.com,REJECT
 arg1 = switch,true,tag=奶茶多合一获取
 arg2 = switch,true,tag=喜马拉雅获取
 arg3 = switch,true,tag=贴吧_获取
-arg4 = switch,true,tag=建行生活获取
+#arg4 = switch,true,tag=建行生活获取
 arg5 = switch,true,tag=高德打车获取
 #arg6 = switch,true,tag=阿里云盘获取
 arg7 = switch,true,tag=万达智慧商业²获取
@@ -24,7 +24,7 @@ arg11 = switch,true,tag=蜜雪冰城获取获取
 arg12 = switch,true,tag=获取托迈酷客获取
 arg13 = switch,true,tag=阿里云盘签到获取
 #arg14 = switch,true,tag=Kafx获取
-arg15 = switch,true,tag=建行数据获取
+#arg15 = switch,true,tag=建行数据获取
 arg16 = switch,true,tag=KKMH获取
 arg17 = switch,true,tag=城市通获取
 #arg18 = switch,true,tag=
@@ -42,7 +42,7 @@ http-request ^https?:\/\/(c\.tieba\.baidu\.com|180\.97\.\d+\.\d+)\/c\/s\/login s
 http-request ^https?:\/\/c\.tieba\.baidu\.com\/c\/s\/channelIconConfig script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/tieba/tieba_signin.js,request-body=true, timeout=60, enable = {arg3},tag=贴吧_新版Cookie2
 http-request ^https?:\/\/tiebac\.baidu\.com\/c\/u\/follow\/getFoldedMessageUserInfo script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/tieba/tieba_signin.js,request-body=true, timeout=60, enable = {arg3},tag=贴吧_新版Cookie3
 #建行生活
-http-request ^https?:\/\/yunbusiness\.ccb\.com\/(clp_coupon|clp_service)\/txCtrl\?txcode=(A3341A038|autoLogin) script-path=https://raw.githubusercontent.com/ClydeTime/Surge/main/Script/Task/CCBLife.js, request-body=true, timeout=60, enable = {arg4},tag=建行生活Cookie
+#http-request ^https?:\/\/yunbusiness\.ccb\.com\/(clp_coupon|clp_service)\/txCtrl\?txcode=(A3341A038|autoLogin) script-path=https://raw.githubusercontent.com/ClydeTime/Surge/main/Script/Task/CCBLife.js, request-body=true, timeout=60, enable = {arg4},tag=建行生活Cookie
 #高德打车
 http-response ^https?:\/\/(m5|dache)\.amap\.com\/(ws\/yuece\/(act|openapi\/activity\/current)\/query|common\/(alipaymini|wxmini)\?_ENCRYPT=) script-path=https://raw.githubusercontent.com/ClydeTime/Surge/main/Script/Task/amap.js, response-body=true, timeout=60, enable = {arg5}, tag=高德打车Cookie
 #阿里云盘
@@ -64,7 +64,7 @@ http-response https:\/\/auth.(aliyundrive|alipan).com\/v2\/account\/token script
 #kafx
 #http-request https://fscrm.kraftheinz.net.cn/crm/public/index.php/api/v1/getUserInfo script-path=https://raw.githubusercontent.com/Crazy-Z7/Task/main/Kafx.js, requires-body=true, request-body=true, timeout=60, enable = {arg14}, tag=Kafx
 #建行数据
-http-request ^https:\/\/yunbusiness\.ccb\.com\/(clp_coupon|clp_service)\/txCtrl\?txcode=(A3341A038|autoLogin) tag=建行数据, script-path=https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/jhsh_checkIn.js,requires-body=true, request-body=true, timeout=60, enable = {arg15}, tag=建行数据
+#http-request ^https:\/\/yunbusiness\.ccb\.com\/(clp_coupon|clp_service)\/txCtrl\?txcode=(A3341A038|autoLogin) tag=建行数据, script-path=https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/jhsh_checkIn.js,requires-body=true, request-body=true, timeout=60, enable = {arg15}, tag=建行数据
 #快看漫画
 http-request ^https:\/\/api\.kkmh\.com\/v\d\/passport\/user script-path=https://raw.githubusercontent.com/NobyDa/Script/master/KuaiKan-DailyBonus/KKMH.js, requires-body=true, request-body=true, timeout=60, enable = {arg16}, tag=KKMH
 #城市通
