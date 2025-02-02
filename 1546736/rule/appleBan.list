@@ -6,5 +6,8 @@
 # 信息收集
 URL-REGEX,\.log\.
 #防止B站白嫖
-[Rule]
 AND, ((PROTOCOL, STUN), (DOMAIN-KEYWORD, bilibili.)), REJECT
+#微信
+DOMAIN, dl.wechat.com, REJECT
+DOMAIN, dldir1.qq.com, REJECT
+DOMAIN, dldir1v6.qq.com, REJECT
