@@ -19,8 +19,6 @@ filterTopReplies = switch, true, false, tag = [评论区]过滤置顶评论广�
 enableAirborne = switch, true, false, tag = [空降助手]跳过[视频内]插播广告, desc = true: 开启; false: 关闭;
 enableAirborneDm = switch, false, true, tag = [空降助手弹幕版]仅限iPad开启, desc = true: 开启; false: 关闭;
 [Rule]
-#防止B站白嫖
-#PROTOCOL,STUN,REJECT
 # 阻止B站备用域名访问
 DOMAIN, api.biliapi.com, REJECT
 DOMAIN, app.biliapi.com, REJECT
