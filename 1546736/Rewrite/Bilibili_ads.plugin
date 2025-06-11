@@ -5,10 +5,10 @@
 #!tag = 去广告
 #!system = 
 #!system_version = 15
-#!loon_version = 3.3.0(853)
+#!loon_version = 3.3.1(869)
 #!homepage = https://github.com/luestr/ProxyResource/blob/main/README.md
 #!icon = https://raw.githubusercontent.com/Orz-3/face/master/Bili.png
-#!date = 2025-06-02 20:04
+#!date = 2025-06-11 14:11
 
 
 [MitM]
@@ -29,8 +29,8 @@ DOMAIN, app.biliapi.net, REJECT
 
 
 # 开屏广告
-URL-REGEX, "^http:\/\/upos-sz-static\.bilivideo\.com\/ssaxcode\/\w{2}\/\w{2}\/\w{32}-1-SPLASH", REJECT-DICT
-URL-REGEX, "^http:\/\/[\d\.]+:8000\/v1\/resource\/\w{32}-1-SPLASH", REJECT-DICT
+#URL-REGEX, "^http:\/\/upos-sz-static\.bilivideo\.com\/ssaxcode\/\w{2}\/\w{2}\/\w{32}-1-SPLASH", REJECT-DICT
+#URL-REGEX, "^http:\/\/[\d\.]+:8000\/v1\/resource\/\w{32}-1-SPLASH", REJECT-DICT
 
 
 [Rewrite]
