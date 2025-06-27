@@ -7,6 +7,7 @@
 #!icon = https://raw.githubusercontent.com/cyj2023/icons/main/icons/Apps/tianyiku.png
 
 # > 中国广电
-# hostname = app.10099.com.cn
+[MitM]
+hostname = app.10099.com.cn
 [Rewrite]
 ^https?:\/\/app\.10099\.com\.cn\/contact-web\/api\/version\/getFlashScreenPage url reject-200
