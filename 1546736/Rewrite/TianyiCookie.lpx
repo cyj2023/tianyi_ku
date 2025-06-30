@@ -6,8 +6,8 @@
 #!loon_version = 3.2.4(787)
 
 [Rule]
-DOMAIN,gslbali.ximalaya.com,REJECT
-DOMAIN,gslbtx.ximalaya.com,REJECT
+DOMAIN，gslbali.ximalaya.com,REJECT
+DOMAIN，gslbtx.ximalaya.com,REJECT
 
 [Argument]
 arg1 = switch,true,tag=奶茶多合一获取
