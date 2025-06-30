@@ -22,10 +22,10 @@ airborneDm = switch, false, true, tag = [空降助手弹幕版]仅限iPad开启,
 
 [Rule]
 # 阻止B站备用域名访问
-DOMAIN, api.biliapi.com, REJECT
-DOMAIN, app.biliapi.com, REJECT
-DOMAIN, api.biliapi.net, REJECT
-DOMAIN, app.biliapi.net, REJECT
+DOMAIN， api.biliapi.com, REJECT
+DOMAIN， app.biliapi.com, REJECT
+DOMAIN， api.biliapi.net, REJECT
+DOMAIN， app.biliapi.net, REJECT
 
 
 # 开屏广告
