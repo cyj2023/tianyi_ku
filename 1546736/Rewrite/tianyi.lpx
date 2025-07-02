@@ -8,10 +8,22 @@
 
 
 [MitM]
-hostname = app.10099.com.cn,m.client.10010.com
+hostname = app.10099.com.cn,m.client.10010.com,ecom.map.baidu.com
 [Rewrite]
 # > 中国广电
 ^https?:\/\/app\.10099\.com\.cn\/contact-web\/api\/version\/getFlashScreenPage url reject-200
 # > 中国联通
 ^https?:\/\/m\.client\.10010\.com\/mobileService\/(activity|customer)\/(accountListData|get_client_adv|get_startadv) url reject-200
 ^https?:\/\/m\.client\.10010\.com\/uniAdmsInterface\/(getHomePageAd|getWelcomeAd) url reject-200
+# > 百度地图
+^https:\/\/ecom\.map\.baidu\.com\/ad-ops\/afd\/entry\? reject-dict
+
+
+
+
+
+
+
+
+
+
