@@ -8,7 +8,7 @@
 
 
 [MitM]
-hostname = app.10099.com.cn,m.client.10010.com,ecom.map.baidu.com
+hostname = app.10099.com.cn,m.client.10010.com,ecom.map.baidu.com,ne.gdsz.sinopec.com
 [Rewrite]
 # > 中国广电
 ^https?:\/\/app\.10099\.com\.cn\/contact-web\/api\/version\/getFlashScreenPage url reject-200
@@ -17,6 +17,8 @@ hostname = app.10099.com.cn,m.client.10010.com,ecom.map.baidu.com
 ^https?:\/\/m\.client\.10010\.com\/uniAdmsInterface\/(getHomePageAd|getWelcomeAd) url reject-200
 # > 百度地图
 ^https:\/\/ecom\.map\.baidu\.com\/ad-ops\/afd\/entry\? reject-dict
+# > 易捷加油
+^https:\/\/ne\.gdsz\.sinopec\.com\/gateway\/api\/omp\/mt\/appAdvertising\/queryAdvertisingByParams url reject-dict
 
 
 
