@@ -1,6 +1,6 @@
 #!name = 天依Task
 #!desc = 天依の定时任务
-#!data = 2024-10-28
+#!data = 2025-07-11
 #!icon =https://raw.githubusercontent.com/cyj2023/icons/main/icons/Apps/tianyi02.png
 #!system = iOS,iPadOS
 #!loon_version = 3.2.4(787)
@@ -54,27 +54,50 @@ arg43 = input,"0 */30 * * *",tag=TF监控任务时间
 arg44 = switch,true,tag=TF监控任务开关
 
 [Script]
+#奶茶多合一
 cron {arg1} script-path=https://gist.githubusercontent.com/Sliverkiss/8b4f5487e0f28786c7dec9c7484dcd5e/raw/teaMilk.js, enable= {arg2}, tag=奶茶多合一
+#=微博超话
 #cron {arg3} script-path=https://raw.githubusercontent.com/toulanboy/scripts/master/weibo/weibotalk.js, timeout=60, enable= {arg4}, tag=微博超话
+#每日一句+ 蚂蚁森林收能量
 cron {arg5} script-path=https://raw.githubusercontent.com/leompsy/nzw9314/master/yichahucha/cron_daily.js, timeout=60, enable= {arg6}, tag=每日一句+ 蚂蚁森林收能量
+#城市通小程序
 cron {arg7} script-path=https://gist.githubusercontent.com/Sliverkiss/74ce859af0cd8a602b00bf5efdfddb53/raw/cst.js, timeout=10, enable= {arg8},tag=城市通小程序
+#复游会
 cron {arg9} script-path=https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/ThomasCook.js, timeout=10, enable= {arg10},tag=复游会
+#Boxjs备份
 cron {arg11} script-path=https://raw.githubusercontent.com/dompling/Script/master/gist/backup.js, timeout=60, enable= {arg12}, tag=Boxjs备份
+#Bojs恢复
 #cron {arg13} script-path=https://raw.githubusercontent.com/dompling/Script/master/gist/restore.js, timeout=60, enable= {arg14}, tag=Bojs恢复
+#微付金币
 cron {arg53} script-path=https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/wechat_pay_coupon.js, timeout=300, enable= {arg54}, tag=微付金币
+#蜜雪冰城小程序签到
 cron {arg15} script-path=https://gist.githubusercontent.com/Sliverkiss/865c82e42a5730bb696f6700ebb94cee/raw/mxbc.js, timeout=10, enable= {arg16}, tag=蜜雪冰城小程序签到
+#万达智慧商业
 #cron {arg17} script-path=https://raw.githubusercontent.com/leiyiyan/resource/main/script/wdzhsy/wdzhsy.js, timeout=300, enable= {arg18}, tag=万达智慧商业
+#美团签到
 #cron {arg19} script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/meituan/meituan.js, timeout=60, enable= {arg20}, tag=美团签到
+#AcFun签到
 cron {arg21} script-path=https://raw.githubusercontent.com/MCdasheng/QuantumultX/main/Scripts/myScripts/acfun.js, timeout=60, enable= {arg22}, tag=AcFun签到
+#自动加入TF
 #cron {arg23} script-path=https://kelee.one/Resource/Script/TestFlight/Auto_join_TF.js, timeout=180, enable= {arg24}, tag=自动加入TF
+#=阿里云任务
 #cron {arg25} script-path=https://gist.githubusercontent.com/Sliverkiss/33800a98dcd029ba09f8b6fc6f0f5162/raw/aliyun.js, timeout=60, enable= {arg26}, tag=阿里云任务
+#TestFlight自动加入
 #cron {arg27} script-path=https://raw.githubusercontent.com/MCdasheng/QuantumultX/main/Scripts/myScripts/TestFlight.js, timeout=60, enable={arg28}, tag=TestFlight自动加入
+#建行生活
 #cron {arg29} script-path=https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/jhsh_checkIn.js, timeout=300, enable={arg30}, tag=建行生活
+#高德地图打车签到
 #cron {arg31} script-path=https://raw.githubusercontent.com/ClydeTime/Surge/main/Script/Task/amap.js, timeout=10, enable={arg32}, tag=高德地图打车签到
+#汇率监控
 cron {arg33} script-path=https://raw.githubusercontent.com/Peng-YM/QuanX/master/Tasks/exchange.js, timeout=10, enable={arg34}, tag=汇率监控
+#阿里云盘签到
 cron {arg35} script-path=https://raw.githubusercontent.com/lowking/Scripts/master/ali/aliYunPanCheckIn.js, timeout=10, enable={arg36}, tag=阿里云盘签到
+#喜马拉雅签到
 #cron {arg37} script-path=https://raw.githubusercontent.com/ClydeTime/Quantumult/main/Script/Task/xmlySign.js, timeout=10, enable={arg38}, tag=喜马拉雅签到
-cron {arg39} script-path=https://raw.githubusercontent.com/NobyDa/Script/master/KuaiKan-DailyBonus/KKMH.js, timeout=10, enable={arg40}, tag=快看漫画
+#快看漫画
+#cron {arg39} script-path=https://raw.githubusercontent.com/NobyDa/Script/master/KuaiKan-DailyBonus/KKMH.js, timeout=10, enable={arg40}, tag=快看漫画
+#百度贴吧
 cron {arg41} script-path=https://gist.githubusercontent.com/blackmatrix7/cebabe7a385fc6a9ad32e2f7a35851dc/raw/1363d8720c92267d0a97fcd8eb98673760891fc9/tieba_min.js, timeout=10, enable={arg42}, tag=百度贴吧
+#TF监控
 cron {arg43} script-path=https://raw.githubusercontent.com/songyangzz/QuantumultX/master/testflight.js, timeout=10, enable={arg44}, tag=TF监控
-[MITM]
+
