@@ -14,7 +14,7 @@ arg1 = switch,true,tag=奶茶多合一获取
 arg2 = switch,true,tag=喜马拉雅获取
 arg3 = switch,true,tag=贴吧_获取
 #arg4 = switch,true,tag=建行生活获取
-#arg5 = switch,true,tag=高德打车获取
+arg5 = switch,true,tag=高德打车获取
 #arg6 = switch,true,tag=阿里云盘获取
 arg7 = switch,true,tag=万达智慧商业²获取
 arg8 = switch,true,tag=微付金币²获取
@@ -45,7 +45,7 @@ http-request ^https?:\/\/tiebac\.baidu\.com\/c\/s\/getClientConfig script-path=h
 #建行生活
 #http-request ^https?:\/\/yunbusiness\.ccb\.com\/(clp_coupon|clp_service)\/txCtrl\?txcode=(A3341A038|autoLogin) script-path=https://raw.githubusercontent.com/ClydeTime/Surge/main/Script/Task/CCBLife.js, request-body=true, timeout=60, enable = {arg4},tag=建行生活Cookie
 #高德打车
-#http-response ^https?:\/\/(m5|dache)\.amap\.com\/(ws\/yuece\/(act|openapi\/activity\/current)\/query|common\/(alipaymini|wxmini)\?_ENCRYPT=) script-path=https://raw.githubusercontent.com/ClydeTime/Surge/main/Script/Task/amap.js, response-body=true, timeout=60, enable = {arg5}, tag=高德打车Cookie
+http-response ^https?:\/\/(m5|dache)\.amap\.com\/(ws\/yuece\/(act|openapi\/activity\/current)\/query|common\/(alipaymini|wxmini)\?_ENCRYPT=) script-path=https://raw.githubusercontent.com/ClydeTime/Surge/main/Script/Task/amap.js, response-body=true, timeout=60, enable = {arg5}, tag=高德打车Cookie
 #阿里云盘
 #http-request ^https:\/\/auth\.alipan\.com\/v2\/account\/token script-path=https://raw.githubusercontent.com/ClydeTime/Surge/main/Script/Task/ADrive.js, request-body=true, timeout=60, enable = {arg6}, tag=阿里云盘Token
 #万达智慧商业
