@@ -46,8 +46,8 @@ arg35 = input,"0 10 0 * * *",tag=阿里云盘签到任务时间
 arg36 = switch,true,tag=阿里云盘签到任务开关
 arg37 = input,"35 8 * * *",tag=喜马拉雅签到任务时间
 arg38 = switch,true,tag=喜马拉雅签到任务开关
-arg39 = input,"0 9 * * *",tag=快看漫画任务时间
-arg40 = switch,true,tag=快看漫画任务开关
+#arg39 = input,"0 9 * * *",tag=快看漫画任务时间
+#arg40 = switch,true,tag=快看漫画任务开关
 arg41 = input,"30 9 * * *",tag=百度贴吧任务时间
 arg42 = switch,true,tag=百度贴吧任务开关
 arg43 = input,"0 */30 * * *",tag=TF监控任务时间
@@ -73,7 +73,7 @@ cron {arg21} script-path=https://raw.githubusercontent.com/MCdasheng/QuantumultX
 #cron {arg31} script-path=https://raw.githubusercontent.com/ClydeTime/Surge/main/Script/Task/amap.js, timeout=10, enable={arg32}, tag=高德地图打车签到
 cron {arg33} script-path=https://raw.githubusercontent.com/Peng-YM/QuanX/master/Tasks/exchange.js, timeout=10, enable={arg34}, tag=汇率监控
 cron {arg35} script-path=https://raw.githubusercontent.com/lowking/Scripts/master/ali/aliYunPanCheckIn.js, timeout=10, enable={arg36}, tag=阿里云盘签到
-cron {arg37} script-path=https://raw.githubusercontent.com/ClydeTime/Quantumult/main/Script/Task/xmlySign.js, timeout=10, enable={arg38}, tag=喜马拉雅签到
+#cron {arg37} script-path=https://raw.githubusercontent.com/ClydeTime/Quantumult/main/Script/Task/xmlySign.js, timeout=10, enable={arg38}, tag=喜马拉雅签到
 cron {arg39} script-path=https://raw.githubusercontent.com/NobyDa/Script/master/KuaiKan-DailyBonus/KKMH.js, timeout=10, enable={arg40}, tag=快看漫画
 cron {arg41} script-path=https://gist.githubusercontent.com/blackmatrix7/cebabe7a385fc6a9ad32e2f7a35851dc/raw/1363d8720c92267d0a97fcd8eb98673760891fc9/tieba_min.js, timeout=10, enable={arg42}, tag=百度贴吧
 cron {arg43} script-path=https://raw.githubusercontent.com/songyangzz/QuantumultX/master/testflight.js, timeout=10, enable={arg44}, tag=TF监控
