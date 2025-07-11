@@ -25,7 +25,7 @@ arg12 = switch,true,tag=获取托迈酷客获取
 arg13 = switch,true,tag=阿里云盘签到获取
 #arg14 = switch,true,tag=Kafx获取
 #arg15 = switch,true,tag=建行数据获取
-arg16 = switch,true,tag=KKMH获取
+#arg16 = switch,true,tag=KKMH获取
 arg17 = switch,true,tag=城市通获取
 #arg18 = switch,true,tag=
 #arg19 = switch,true,tag=
@@ -67,7 +67,7 @@ http-response https:\/\/auth.(aliyundrive|alipan).com\/v2\/account\/token script
 #建行数据
 #http-request ^https:\/\/yunbusiness\.ccb\.com\/(clp_coupon|clp_service)\/txCtrl\?txcode=(A3341A038|autoLogin) tag=建行数据, script-path=https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/jhsh_checkIn.js,requires-body=true, request-body=true, timeout=60, enable = {arg15}, tag=建行数据
 #快看漫画
-http-request ^https:\/\/api\.kkmh\.com\/v\d\/passport\/user script-path=https://raw.githubusercontent.com/NobyDa/Script/master/KuaiKan-DailyBonus/KKMH.js, requires-body=true, request-body=true, timeout=60, enable = {arg16}, tag=KKMH
+#http-request ^https:\/\/api\.kkmh\.com\/v\d\/passport\/user script-path=https://raw.githubusercontent.com/NobyDa/Script/master/KuaiKan-DailyBonus/KKMH.js, requires-body=true, request-body=true, timeout=60, enable = {arg16}, tag=KKMH
 #城市通
 http-response ^https:\/\/wxxcx\.17u\.cn\/subwayapi\/user\/detail script-path=https://gist.githubusercontent.com/Sliverkiss/74ce859af0cd8a602b00bf5efdfddb53/raw/cst.js, response-body=true, request-body=true, timeout=60, enable = {arg17}, tag=城市通获取token
 
