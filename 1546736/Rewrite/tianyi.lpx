@@ -19,6 +19,12 @@ hostname = app.10099.com.cn,m.client.10010.com,ecom.map.baidu.com,ne.gdsz.sinope
 ^https:\/\/ecom\.map\.baidu\.com\/ad-ops\/afd\/entry\? reject-dict
 # > 易捷加油
 ^https:\/\/ne\.gdsz\.sinopec\.com\/gateway\/api\/omp\/mt\/appAdvertising\/queryAdvertisingByParams url reject-dict
+# > NB助手
+^http:\/\/nbtool8\.com:9527\/nb\/app url reject-200
+
+
+
+
 
 
 
