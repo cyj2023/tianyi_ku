@@ -27,7 +27,7 @@ arg13 = switch,true,tag=阿里云盘签到获取
 #arg15 = switch,true,tag=建行数据获取
 #arg16 = switch,true,tag=KKMH获取
 arg17 = switch,true,tag=城市通获取
-#arg18 = switch,true,tag=meituan.cookie
+arg18 = switch,true,tag=meituan.cookie
 #arg19 = switch,true,tag=
 
 
