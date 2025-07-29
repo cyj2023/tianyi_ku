@@ -71,7 +71,7 @@ http-response https:\/\/auth.(aliyundrive|alipan).com\/v2\/account\/token script
 #城市通
 http-response ^https:\/\/wxxcx\.17u\.cn\/subwayapi\/user\/detail script-path=https://gist.githubusercontent.com/Sliverkiss/74ce859af0cd8a602b00bf5efdfddb53/raw/cst.js, response-body=true, request-body=true, timeout=60, enable = {arg17}, tag=城市通获取token
 #美团
-http-request ^https:\/\/i.meituan.com\/evolve\/signin\/signpost\/ script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/meituan/meituan.cookie.js, requires-body=true, timeout=60, enable = {arg18}, tag=meituan.cookie
+http-request ^https:\/\/i.meituan.com\/evolve\/signin\/signpost\/ script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/meituan/meituan.cookie.js, requires-body=true, request-body=true, timeout=60, enable = {arg18}, tag=meituan.cookie
 
 [MITM]
 hostname = xmc.ximalaya.com, c.tieba.baidu.com, tiebac.baidu.com, yunbusiness.ccb.com, m5.amap.com, dache.amap.com, auth.alipan.com,www.wandawic.com,payapp.weixin.qq.com,api-ipv6.app.acfun.cn, *.acfun.cn, *.app.acfun.cn,testflight.apple.com,mxsa.mxbc.net,apis.folidaymall.com,auth.alipan.com,fscrm.kraftheinz.net.cn,api.kkmh.com,webapi2.qmai.cn,webapi.qmai.cn,qmwebapi.qmai.cn,wxxcx.17u.cn
