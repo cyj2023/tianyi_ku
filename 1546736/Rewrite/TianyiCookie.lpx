@@ -6,8 +6,8 @@
 #!loon_version = 3.2.4(787)
 
 [MITM]
-hostname = xmc.ximalaya.com, c.tieba.baidu.com, tiebac.baidu.com, yunbusiness.ccb.com, m5.amap.com, dache.amap.com, auth.alipan.com,www.wandawic.com,payapp.weixin.qq.com,api-ipv6.app.acfun.cn, *.acfun.cn, *.app.acfun.cn,testflight.apple.com,mxsa.mxbc.net,apis.folidaymall.com,auth.alipan.com,fscrm.kraftheinz.net.cn,api.kkmh.com,webapi2.qmai.cn,webapi.qmai.cn,qmwebapi.qmai.cn,wxxcx.17u.cn
-, i.meituan.com
+hostname = xmc.ximalaya.com, c.tieba.baidu.com, tiebac.baidu.com, yunbusiness.ccb.com, m5.amap.com, dache.amap.com, auth.alipan.com,www.wandawic.com,payapp.weixin.qq.com,api-ipv6.app.acfun.cn, *.acfun.cn, *.app.acfun.cn,testflight.apple.com,mxsa.mxbc.net,apis.folidaymall.com,auth.alipan.com,fscrm.kraftheinz.net.cn,api.kkmh.com,webapi2.qmai.cn,webapi.qmai.cn,qmwebapi.qmai.cn,wxxcx.17u.cn,
+i.meituan.com
 
 
 
