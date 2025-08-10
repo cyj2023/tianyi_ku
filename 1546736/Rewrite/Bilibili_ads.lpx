@@ -8,11 +8,12 @@
 #!loon_version = 3.3.2(877)
 #!homepage = https://github.com/luestr/ProxyResource/blob/main/README.md
 #!icon = https://raw.githubusercontent.com/Orz-3/face/master/Bili.png
-#!date = 2025-08-03 20:58
+#!date = 2025-08-10 11:09
 
 
 [MitM]
 hostname =grpc.biliapi.net, app.bilibili.com, api.bilibili.com, api.live.bilibili.com, live.bilibili.com, line3-h5-mobile-api.biligame.com
+
 
 [Argument]
 showUpList = select, "auto", "true", "false", tag = [动态]中[最常访问]的显示方式, desc = auto: 仅当列表中存在直播状态时显示; true: 始终显示; false: 始终隐藏;
