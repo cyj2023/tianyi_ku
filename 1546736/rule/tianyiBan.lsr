@@ -2,7 +2,7 @@
 # 电报转圈
 #IP-CIDR,95.161.76.100/31,REJECT-NO-DROP,no-resolve
 # 防止B站白嫖
-AND, ((PROTOCOL, STUN), (DOMAIN-KEYWORD, bilibili.)), REJECT
+#AND, ((PROTOCOL, STUN), (DOMAIN-KEYWORD, bilibili.)), REJECT
 # 微信
 DOMAIN, dl.wechat.com, REJECT
 DOMAIN, dldir1.qq.com, REJECT
