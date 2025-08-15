@@ -8,7 +8,7 @@
 #!loon_version = 3.3.2(877)
 #!homepage = https://github.com/luestr/ProxyResource/blob/main/README.md
 #!icon = https://raw.githubusercontent.com/Orz-3/face/master/Bili.png
-#!date = 2025-08-10 11:09
+#!date = 2025-08-15 17:15
 
 
 [MitM]
@@ -22,14 +22,13 @@ purifyWebpage = switch, true, false, tag = [直播间]净化内嵌网页广告, 
 airborne = switch, true, false, tag = [空降助手]跳过视频内插播广告, desc = true: 开启; false: 关闭;
 logLevel = select, "off", "error", "warn", "info", "debug", tag = 日志等级, desc = 选择日志输出等级
 
-
+[Rule]
 # 阻止B站备用域名访问
 DOMAIN, api.biliapi.com, REJECT
 DOMAIN, app.biliapi.com, REJECT
 DOMAIN, api.biliapi.net, REJECT
 DOMAIN, app.biliapi.net, REJECT
-DOMAIN-SUFFIX, chat.bilibili.com, REJECT
-
+AND, ((DOMAIN-SUFFIX, chat.bilibili.com), (OR, ((DOMAIN-KEYWORD, stun), (DOMAIN-KEYWORD, tracker)))), REJECT
 
 [Rewrite]
 # 移除直播广告
@@ -53,9 +52,9 @@ DOMAIN-SUFFIX, chat.bilibili.com, REJECT
 # 移除播放页面广告
 ^https:\/\/(grpc\.biliapi\.net|app\.bilibili\.com)\/bilibili\.app\.view\.v1\.View\/TFInfo$ mock-response-body data-type=base64 data="AAAAAAIIAQ==" mock-data-is-base64=true
 
-^(https:\/\/api\.bilibili\.com\/pgc\/page\/channel\?.*)(&mobi_app=iphone)(&.*)$ 307 $1$2_i$3
+^(https:\/\/api\.bilibili\.com\/pgc\/page\/channel\?.*)(&mobi_app=iphone)(&.*)$ header $1$2_i$3
 
-^https:\/\/api\.bilibili\.com\/x\/pd-proxy\/tracker\? response-body-json-jq '.data[][]?="chat.bilibili.com:3478"'
+^https:\/\/api\.bilibili\.com\/x\/pd-proxy\/tracker\? response-body-json-jq '.data[][]?="stun.chat.bilibili.com:3478"'
 
 ^https:\/\/api\.bilibili\.com\/pgc\/view\/v2\/app\/season\? response-body-json-jq 'del(.data.payment)'
 
