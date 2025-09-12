@@ -10,12 +10,6 @@
 [MitM]
 hostname = app.10099.com.cn,m.client.10010.com,ecom.map.baidu.com,ne.gdsz.sinopec.com
 
-[Rule]
-# 移除开屏广告
-DOMAIN,m1.ad.10010.com,REJECT
-
-
-
 [Rewrite]
 # > 中国广电
 ^https?:\/\/app\.10099\.com\.cn\/contact-web\/api\/version\/getFlashScreenPage url reject-200
