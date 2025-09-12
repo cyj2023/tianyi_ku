@@ -9,19 +9,33 @@
 
 [MitM]
 hostname = app.10099.com.cn,m.client.10010.com,ecom.map.baidu.com,ne.gdsz.sinopec.com
+
+[Rule]
+# 移除开屏广告
+DOMAIN,m1.ad.10010.com,REJECT
+
+
+
 [Rewrite]
 # > 中国广电
 ^https?:\/\/app\.10099\.com\.cn\/contact-web\/api\/version\/getFlashScreenPage url reject-200
-# > 中国联通
-^https?:\/\/m\.client\.10010\.com\/mobileService\/(activity|customer)\/(accountListData|get_client_adv|get_startadv) url reject-200
-^https?:\/\/m\.client\.10010\.com\/uniAdmsInterface\/(getHomePageAd|getWelcomeAd) url reject-200
 # > 百度地图
 ^https:\/\/ecom\.map\.baidu\.com\/ad-ops\/afd\/entry\? reject-dict
 # > 易捷加油
 ^https:\/\/ne\.gdsz\.sinopec\.com\/gateway\/api\/omp\/mt\/appAdvertising\/queryAdvertisingByParams url reject-dict
 # > NB助手
 ^http:\/\/nbtool8\.com:9527\/nb\/app url reject-200
-
+# > 中国联通
+# 移除主页几个小按钮
+^https:\/\/m\.client\.10010\.com\/clientIndex\/v1\/api\/navHome response-body-json-jq '.datas.homeTopMenuItems |= map(select(.menuName != "通通" and .menuName != "签到"))'
+# 移除主页浮窗和底部推广
+^https:\/\/m\.client\.10010\.com\/clientIndex\/homefusion\/fuInter response-body-json-jq 'del(.["HomeFusion.fuchuangAdv_A8"], .["HomeFusion.bottomLabel"])'
+# 移除搜索框推广
+^https:\/\/m\.client\.10010\.com\/search_service\/tyfbSearch\/searchDiscoverListExpress response-body-json-jq '.data = []'
+^https:\/\/m\.client\.10010\.com\/search_service\/search\/searchScrollWord response-body-json-jq '.["113000004"] = []'
+# 联通AD
+^https?:\/\/m\.client\.10010\.com\/mobileService\/(activity|customer)\/(accountListData|get_client_adv|get_startadv) url reject-200
+^https?:\/\/m\.client\.10010\.com\/uniAdmsInterface\/(getHomePageAd|getWelcomeAd) url reject-200
 
 
 
