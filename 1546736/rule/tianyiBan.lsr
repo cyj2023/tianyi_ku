@@ -10,6 +10,5 @@ DOMAIN, dldir1v6.qq.com, REJECT
 # NB助手开屏
 DOMAIN,sdk.zhangyuyidong.cn,REJECT
 DOMAIN,api-dsp.8ziben.com,REJECT
-# 中国联通
-# 移除开屏广告
+# 中国联通移除开屏广告
 DOMAIN,m1.ad.10010.com,REJECT
