@@ -25,7 +25,7 @@ arg5 = switch,true,tag=高德打车获取
 arg7 = switch,true,tag=万达智慧商业²获取
 arg8 = switch,true,tag=微付金币²获取
 arg9 = switch,true,tag=acfun获取
-arg10 = switch,true,tag=TF_appIds获取
+#arg10 = switch,true,tag=TF_appIds获取
 arg11 = switch,true,tag=蜜雪冰城获取获取
 arg12 = switch,true,tag=获取托迈酷客获取
 arg13 = switch,true,tag=阿里云盘签到获取
