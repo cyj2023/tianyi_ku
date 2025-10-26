@@ -50,8 +50,8 @@ arg38 = switch,true,tag=喜马拉雅签到任务开关
 #arg40 = switch,true,tag=快看漫画任务开关
 arg41 = input,"30 9 * * *",tag=百度贴吧任务时间
 arg42 = switch,true,tag=百度贴吧任务开关
-arg43 = input,"0 */30 * * *",tag=TF监控任务时间
-arg44 = switch,true,tag=TF监控任务开关
+#arg43 = input,"0 */30 * * *",tag=TF监控任务时间
+#arg44 = switch,true,tag=TF监控任务开关
 
 [Script]
 #奶茶多合一
@@ -99,5 +99,5 @@ cron {arg35} script-path=https://raw.githubusercontent.com/lowking/Scripts/maste
 #百度贴吧
 cron {arg41} script-path=https://gist.githubusercontent.com/blackmatrix7/cebabe7a385fc6a9ad32e2f7a35851dc/raw/1363d8720c92267d0a97fcd8eb98673760891fc9/tieba_min.js, timeout=10, enable={arg42}, tag=百度贴吧
 #TF监控
-cron {arg43} script-path=https://raw.githubusercontent.com/songyangzz/QuantumultX/master/testflight.js, timeout=10, enable={arg44}, tag=TF监控
+#cron {arg43} script-path=https://raw.githubusercontent.com/songyangzz/QuantumultX/master/testflight.js, timeout=10, enable={arg44}, tag=TF监控
 
