@@ -15,9 +15,10 @@
 hostname = grpc.biliapi.net, app.bilibili.com, api.bilibili.com, api.live.bilibili.com, line3-h5-mobile-api.biligame.com
 
 [Argument]
-showUpList = select, "auto", "show", "hide", tag = [动态]中[最常访问]的显示方式, desc = auto: 仅当列表中存在直播状态时显示; show: 始终显示; hide: 始终隐藏;
-purifyTopReplies = switch, true, false, tag = [评论区]过滤置顶评论广告, desc = true: 开启; false: 关闭;
-airborne = switch, true, false, tag = [空降助手]跳过视频内插播广告, desc = true: 开启; false: 关闭;
+displayUpList = select, "auto", "show", "hide", tag = [动态]中[最常访问]的显示方式, desc = auto: 仅当列表中存在直播状态时显示; show: 始终显示; hide: 始终隐藏;
+purifyComment = switch, true, false, tag = [评论区]过滤置顶评论广告, desc = true: 开启; false: 关闭;
+optimizeRequest = switch, false, true, tag =[评论区]优化卡顿(BETA), desc = true: 开启; false: 关闭;
+sponsorBlock = switch, true, false, tag = [空降助手]跳过视频内插播广告, desc = true: 开启; false: 关闭;
 logLevel = select, "off", "error", "warn", "info", "debug", tag = 日志等级, desc = 选择日志输出等级
 
 [Rule]
