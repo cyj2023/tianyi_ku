@@ -1,9 +1,0 @@
-#!name=qysj
-#!desc=qysj
-
-[Script]
-# > 千亦视界
-http-response ^https?:\/\/app.thwlqy.com\/(login\/login\/sign|login\/login\/veifys).html.*$ script-path=https://raw.githubusercontent.com/WeiGiegie/666/main/qysj.js, requires-body=true, timeout=60, tag=qysj
-
-[MITM]
-hostname = app.thwlqy.com
