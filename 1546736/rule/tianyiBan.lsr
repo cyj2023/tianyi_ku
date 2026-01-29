@@ -2,13 +2,13 @@
 # 电报转圈
 #IP-CIDR,95.161.76.100/31,REJECT-NO-DROP,no-resolve
 # 防止B站白嫖
-#AND, ((PROTOCOL, STUN), (DOMAIN-KEYWORD, bilibili.)), REJECT
+#AND, ((PROTOCOL, STUN), (DOMAIN-KEYWORD, bilibili.))
 # 微信
-DOMAIN, dl.wechat.com, REJECT
-DOMAIN, dldir1.qq.com, REJECT
-DOMAIN, dldir1v6.qq.com, REJECT
+DOMAIN, dl.wechat.com
+DOMAIN, dldir1.qq.com
+DOMAIN, dldir1v6.qq.com
 # NB助手开屏
-DOMAIN,sdk.zhangyuyidong.cn,REJECT
-DOMAIN,api-dsp.8ziben.com,REJECT
+DOMAIN,sdk.zhangyuyidong.cn
+DOMAIN,api-dsp.8ziben.com
 # 中国联通移除开屏广告
-DOMAIN,m1.ad.10010.com,REJECT
+DOMAIN,m1.ad.10010.com
