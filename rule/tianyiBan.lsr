@@ -3,6 +3,8 @@
 #IP-CIDR,95.161.76.100/31,REJECT-NO-DROP,no-resolve
 # 防止B站白嫖
 #AND, ((PROTOCOL, STUN), (DOMAIN-KEYWORD, bilibili.))
+# 信息收集
+URL-REGEX,\.log\.
 # 微信
 DOMAIN, dl.wechat.com
 DOMAIN, dldir1.qq.com
