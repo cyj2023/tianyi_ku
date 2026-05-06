@@ -3,7 +3,7 @@
 #!openUrl=
 #!author=zqzess
 #!homepage=https://github.com/zqzess/rule_for_quantumultX
-#!icon=
+#!icon =https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/Google.png
 [URL Rewrite]
 #hostname=*.google.com.hk ,*.g.cn,*.google.cn ,*.google.co.jp
 
