@@ -1,0 +1,2 @@
+[Script]
+http-response ^https?:\/\/x\.com\/i\/api\/graphql\/[^\/]+\/PinnedTimelines\? script-path=
