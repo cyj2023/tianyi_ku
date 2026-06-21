@@ -5,4 +5,4 @@ DOMAIN-SUFFIX,www.5bx6h.net
 DOMAIN-SUFFIX,yinhai.aiinyue.com
 DOMAIN-SUFFIX,lrc.makifx.com
 #Feather
-DOMAIN-SUFFIX,*.backloop.dev,DIRECT
+#DOMAIN-SUFFIX,*.backloop.dev,DIRECT
