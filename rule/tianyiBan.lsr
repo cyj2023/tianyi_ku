@@ -10,7 +10,7 @@ DOMAIN, dl.wechat.com
 DOMAIN, dldir1.qq.com
 DOMAIN, dldir1v6.qq.com
 # NB助手开屏
-DOMAIN,sdk.zhangyuyidong.cn
-DOMAIN,api-dsp.8ziben.com
+#DOMAIN,sdk.zhangyuyidong.cn
+#DOMAIN,api-dsp.8ziben.com
 # 中国联通移除开屏广告
 DOMAIN,m1.ad.10010.com
