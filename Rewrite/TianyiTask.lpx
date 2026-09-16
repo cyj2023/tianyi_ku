@@ -52,7 +52,7 @@ arg41 = input,"30 9 * * *",tag=百度贴吧任务时间
 arg42 = switch,true,tag=百度贴吧任务开关
 #arg43 = input,"0 */30 * * *",tag=TF监控任务时间
 #arg44 = switch,true,tag=TF监控任务开关
-arg45 = input,"00 8 * * *",tag=起点读书自动签到任务时间
+arg45 = input,"0 8 * * *",tag=起点读书自动签到任务时间
 arg46 = switch,true,tag=起点读书自动签到任务开关
 
 
